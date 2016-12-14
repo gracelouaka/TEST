@@ -1,0 +1,96 @@
+
+[schéma TP4]
+
+Paramètres
+
+Taille de la population : 6
+nombre de parents sélectioN pour la reproduction : 4
+opérateur de croisemnt : croisement à un point ( one point cross-over)
+
+politik de réinsertion dans population : les 2 meilleurs enfants remplacent les 2 pires individus de la population
+
+probabilité de mutation : 50 %
+
+opérateur de mutation :  permutation de 2 sommets
+
+
+///
+etape1: génération de la population initiale	etape2: evaluation des individus	etape3: sélection des individus
+********************************************	********************************	*******************************
+//--- individus générés aléatoirement 			valeur de fitness(1/distance)	probabilité		cumul
+individu 1 : 0 1 2 3 4 5			21			1/21=0.048	0.048/0.271=0.18	0.18														
+individu 2 : 4 2 1 3 0 5			20			1/20=0.50		0.18		0.18+0.18=0.36															
+individu 3 : 2 3 5 0 1 4			24			1/24=0.042		0.15		0.36+0.15=0.51										
+individu 4 : 0 2 4 1 3 5			23			1/23=0.043		0.16		0.67													
+individu 5 : 1 2 0 5 4 3			20			1/20=0.50		0.18		0.86												
+individu 6 : 0 4 2 3 5 1			26			1/26=0.038		0.14		1.00													
+									som=0.271
+
+Parents sélectionnés:
+--------------------
+individu 5 : 1 2 0 | 5 4 3			20
+individu 1 : 0 1 2 | 3 4 5			21
+individu 4 : 0 2 4 | 1 3 5			23
+individu 3 : 2 3 5 | 0 1 4			24
+
+
+etape4: Reproduction:
+********************
+1 2 0  3 4 5  17
+0 1 2  5 4 3  15
+0 2 4  1 3 5  23 
+2 3 5  1 0 4  26
+
+etape 5: production de la nouvelle population
+*********************************************
+
+1 2 0 5 4 3	20
+4 2 1 3 0 5	20
+0 1 2 3 4 5	21
+0 2 4 1 3 5	23
+0 1 2 5 4 3	15
+1 2 0 3 4 5	17
+
+etape 6: mutation
+******************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

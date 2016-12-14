@@ -1,0 +1,4 @@
+TT-> tour de transitions
+DS-> Distinguer les etats deux a deux
+UIO -> Unique Input Output sequence
+------------Ajout pour Git
